@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/card_vertical_padding"
+        android:paddingStart="@dimen/card_horizontal_start_padding"
+        android:paddingEnd="@dimen/card_horizontal_end_padding">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/card_personal_image"
+            android:layout_height="@dimen/card_personal_image"
+            android:src="@drawable/person"
+            app:shapeAppearanceOverlay="@style/RoundedImage" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsans_bold"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mid_padding"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="@string/position"
+                android:textColor="@color/subtitle"
+                android:textSize="@dimen/subtitle" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mid_padding"
+                android:drawablePadding="@dimen/small_padding"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/location"
+                android:textColor="@color/light_text_color"
+                android:textSize="@dimen/subtitle"
+                app:drawableStartCompat="@drawable/location" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mid_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/mid_padding"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="@string/reviews"
+                    android:textColor="@color/subtitle_light"
+                    android:textSize="@dimen/subtitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:fontFamily="@font/dmsans_medium"
+                    android:text="@string/stars"
+                    android:textColor="@color/subtitle_light"
+                    android:textSize="@dimen/subtitle"
+                    app:drawableEndCompat="@drawable/star" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge_background"
+                android:fontFamily="@font/dmsans_regular"
+                android:paddingHorizontal="@dimen/mid_padding"
+                android:paddingVertical="@dimen/small_padding"
+                android:text="@string/hours"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mid_padding"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="@string/counrty"
+                android:textColor="@color/subtitle"
+                android:textSize="@dimen/subtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mid_padding"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="@string/last_seen"
+                android:textColor="#61122940"
+                android:textSize="@dimen/subtitle" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

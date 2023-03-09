@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LinearLayoutTask</string>
+    <string name="name">Mohammed Alhams</string>
+    <string name="position">Software engineer</string>
+    <string name="location">UK</string>
+    <string name="reviews">(150 Reviews)</string>
+    <string name="stars">4.5</string>
+    <string name="hours">3 hr</string>
+    <string name="counrty">Palestine</string>
+    <string name="last_seen">5 Days ago</string>
+</resources>
